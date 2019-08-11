@@ -1,0 +1,611 @@
+/*重置样式*/
+
+@import 'reset.css';
+
+/* 主体 */
+
+
+
+
+.nav-wapper {
+    height: 44px;
+    background-color: rgba(45, 45, 45, 0.98);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+}
+
+.global-nav {
+    height: 44px;
+    width: 80%;
+}
+
+.nav-item1 {
+    height: 44px;
+    width: 120px;
+    text-align: center;
+}
+
+.nav-ul .nav-item1 a {
+    display: block;
+    height: 44px;
+    width: 48px;
+    background-size: 100% 100%;
+    margin:  0 auto;
+}
+
+
+
+
+.m-mac {
+    background-image: url(../image/mac.svg);
+    background-size: 100% 100%;
+}
+
+.m-iPad {
+    background-image: url(../image/ipad.svg);
+    background-size: 100% 100%;
+}
+
+.m-iphone {
+    background-image: url(../image/iPhone.svg);
+    background-size: 100% 100%;
+}
+
+.m-watch {
+    background-image: url(../image/watch.svg);
+    background-size: 100% 100%;
+}
+
+.m-music {
+    background-image: url(../image/music.svg);
+    background-size: 100% 100%;
+}
+
+
+
+.hover-open{
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    display: block;
+height: 24px;
+width: 24px;
+background-image: url(../image/menu.JPG);
+background-size: 100% 100%;
+display: none;
+overflow: hidden;
+}
+.menu-hi{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 0;
+    background-color:rgba(45, 45, 45, 0.98); 
+    transition: all 0.5s;
+}
+.menu-li{
+    display: block;
+    height: 48px;
+    width: 300px;
+    margin :0 auto;
+}
+.menu-li a{
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    margin :0 auto;
+}
+.menu-li a:hover{
+    opacity: 0.7;
+}
+
+.hover-open:hover  .menu-hi{
+    height: 300px;
+}
+
+.hover-open:hover{
+    overflow: visible;
+}
+.home {
+    background-image: url(../image/Apple_home.svg);
+    background-size: 100% 100%;
+}
+
+.mac {
+    background-image: url(../image/mac.svg);
+    background-size: 100% 100%;
+}
+
+.iPad {
+    background-image: url(../image/ipad.svg);
+    background-size: 100% 100%;
+}
+
+.iPhone {
+    background-image: url(../image/iPhone.svg);
+    background-size: 100% 100%;
+}
+
+.watch {
+    background-image: url(../image/watch.svg);
+    background-size: 100% 100%;
+}
+
+.music {
+    background-image: url(../image/music.svg);
+    background-size: 100% 100%;
+}
+
+.surpport {
+    background-image: url(../image/support.svg);
+    background-size: 100% 100%;
+}
+
+.search {
+    background-image: url(../image/search.svg);
+    background-size: 100% 100%;
+}
+
+.bag {
+    background-image: url(../image/pakage.svg);
+    background-size: 100% 100%;
+}
+
+
+
+.nav-ul .nav-item1 a:hover {
+    opacity: 0.7;
+}
+
+
+/*内容部分*/
+
+
+/*独立板块 standalone*/
+
+.standalone {
+    background-color: #fafafa;
+    height: 350px;
+    margin: 0 0 10px;
+}
+
+.standalone-p1 {
+    padding: 150px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    width:80%;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.standalone-p2 {
+    font-size: 18px;
+    padding: 15px 0 0;
+    text-align: center;
+    width: 470px;
+    height: 58px;
+    line-height: 29px;
+}
+
+.standalone-p3 {
+    padding: 15px 0 0;
+    text-align: center;
+    color: #0070c9;
+}
+
+.p-a {
+    display: inline-block;
+    padding: 0 17px 0;
+}
+
+.p-a:hover {
+    text-decoration: underline;
+}
+
+.item {
+    background-color: #fafafa;
+    height: 575px;
+    margin: 0 0 10px;
+}
+
+.item-p1 {
+    padding: 35px 0 0 0;
+    margin: 0 auto 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;/* 文字对齐居中*/
+}
+
+.item-p2 {
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 60%；
+}
+
+.item-p2 a {
+    color: black;
+    display: inline-block;
+    width: 545px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.item-p3 {
+    /* padding: 40px 0 0 ; */
+    margin: 10px auto 0;
+    text-align: center;
+    color: #0070c9;
+    /*包含在p3标签的所有颜色都为蓝色，用来设置 > 符号*/
+}
+
+.img1 {
+    background-image: url(../image/iPhoneXRs.JPG);
+    width: 622px;
+    height: 320px;
+}
+
+.img2 {
+    background-image: url(../image/iPhoneXss.JPG);
+    width: 750px;
+    height: 290px;
+}
+
+.div2 .p-a {
+    margin: 15px 0 49px;
+}
+
+.div3 .p-a {
+    margin: 45px 0 20px;
+}
+
+.div4 {
+    padding: 20px 0 0;
+    height: 580px;
+    background-color: #fafafa;
+    margin: 0 0 10px;
+}
+
+.img3 {
+    background-image: url(../image/WATCH.JPG);
+    width: 206px;
+    height: 78px;
+}
+
+.img4 {
+    background-image: url(../image/watches.jpg);
+    width: 510px;
+    height: 360px;
+}
+
+.small-wapper{
+    display: flex;
+    justify-content: space-around;/*周围都有空间*/
+    /* height: 550px; */
+    width: 100%;
+    overflow: hidden;
+}
+.small {
+    position: relative;
+    height: 550px;
+    width: 745px;
+    background-color: #fafafa;
+    margin: 5px  5px 5px;
+    overflow: hidden;
+}
+.small-font {
+    position: relative;
+    width: 78%;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 20px 0 0px;
+}
+
+.small-font .p-a1 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.small-font-p1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 20px 0 0px;
+}
+
+.small-p1-a {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 0 auto 0;
+}
+.img5 {
+    background-image: url(../image/div5.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.small-img {
+    position: absolute;
+    z-index: 0;
+}
+
+.img6 {
+    background-image: url(../image/airs.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.small-font-p2 {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto 10;
+}
+
+.p2-a {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto 0;
+    line-height: 19px;
+    height: 19px;
+}
+
+
+
+.div6-1 {
+    background-color: black;
+}
+
+.img7 {
+    background-image: url(../image/Macpro.jpg);
+    width: 100%;
+    height:100%;
+}
+
+.div6 .small-p1-a {
+    color: white;
+}
+
+.div6 .p2-a {
+    color: white;
+}
+
+.div6-1 .item-p3 a {
+    color: #6bf;
+}
+
+.div6-2 {
+    background-color: white;
+}
+
+.img8 {
+    background-image: url(../image/human1.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.div6-2 .item-p3 a {
+    color: white;
+}
+
+.div6-2 .item-p3 {
+    color: white;
+}
+
+.div6-2 .style3-img {
+    left: 0;
+}
+
+.img9 {
+    background-image: url(../image/airpods.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.img10 {
+    background-image: url(../image/iPodPro.jpg);
+    width: 70%;
+    height: 70%;
+}
+
+.div7-2 .small-img {
+    left: 20%;
+    top: 40%;
+}
+/*总页脚*/
+
+
+.global-fotter {
+    background-color: #f2f2f2;
+    margin: 0px auto 0;
+    padding: 20px 0 0;
+    flex-direction: column;
+}
+.help {
+    width: 70%;
+    margin: 0px auto 10px;
+}
+
+.help-content {
+    margin: 0px auto 0;
+    font-size: 11px;
+    font-family: arial;
+}
+.help a {
+    font-size: 12px;
+    font-family: arial;
+}
+.hr1 {
+    margin: 20px 0 10px;
+}
+.hidsec{
+    display: none;
+}
+.menu-nav {
+    width: 70%;
+    margin: 10px auto 0;
+}
+
+.uls {
+    height: 300px;
+    width: 100%;
+    font-family: arial;
+    margin: 0 auto 35px;
+   justify-content:space-around; /*周围有一定空间*/
+    align-items: center;
+    
+}
+
+.one-ul {
+    display: inline-block;
+    height: 300px;
+    width: 20%;
+}
+
+.ul {
+    display: inline-block;
+    height: 300px;
+    width: 150px;
+}
+
+.li-head {
+    display: block;
+    color: #333333;
+    padding: 7px 0 7px;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.li-item {
+    display: block;
+    padding: 7px 0 7px;
+    line-height: 11px;
+}
+
+.li-a {
+    color: #555555;
+    font-size: 11.5px;
+    margin: 10px 0 50px;
+}
+
+.li-a:hover {
+    text-decoration: underline;
+}
+
+.footer-p1 {
+    color: #555555;
+    width: 70%;
+    font-size: 11.5px;
+    margin: 50px auto 20px;
+}
+
+.footer-p1 a {
+    color: #0070c9;
+    font-size: 11.5px;
+}
+
+.footer-p1 a:hover {
+    text-decoration: underline;
+}
+.small-footer{
+    width: 70%;
+    
+}
+.footer-p2 {
+    color: #888888;
+    font-size: 12px;
+    width: 270px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+.footer-p3 {
+    color: #333333;
+    font-size: 12px;
+    
+}
+.small-footer .one-ul {
+    height: 12px;
+    width: 60px;
+}
+.small-footer .li-a {
+    color: #555555;
+    font-size: 11.5px;
+    margin: 0;
+}
+.small-footer .uls {
+   justify-content: flex-start;
+   width:400px;
+   height: 30px;
+   display: block;
+}
+
+
+
+
+    @media only screen and (max-width: 818px)
+{
+
+    .nav-ul li{
+        display: none ;
+    }
+    
+  .hover-open{
+      display: block;
+  }
+
+    .nav-ul .homewapper{
+        display: block ;
+        height: 44px;
+        position: relative;
+        left: 50%;
+         margin-left:-24px; 
+    }
+    .home{
+        position: absolute;
+    }
+    .nav-ul .bagwapper{
+        display: block ;
+        height: 44px;
+        position: absolute;
+        right: 0; 
+    }
+    .bag{
+        position: absolute;
+        right: 0;/*位于最右端*/
+    }
+
+
+    .menu-nav{
+       display: none;
+    }
+    
+    .hidsec{
+        display: block;
+        width: 70%;
+    }
+    .hid{
+display: block;
+width: 100%;
+    }
+  .li-hid{
+    display: block;
+    font-size: 12px;
+    height: 13px;
+    line-height: 13px;
+  }
+  .small-wapper{
+      flex-wrap: wrap;
+  }
+
+} 
+
