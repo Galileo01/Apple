@@ -1,11 +1,7 @@
 /*重置样式*/
 
 @import 'reset.css';
-
 /* 主体 */
-
-
-
 
 .nav-wapper {
     height: 44px;
@@ -18,12 +14,12 @@
 
 .global-nav {
     height: 44px;
-    width: 80%;
+    width: 64%;
 }
 
 .nav-item1 {
     height: 44px;
-    width: 120px;
+    width: 100px;
     text-align: center;
 }
 
@@ -32,11 +28,10 @@
     height: 44px;
     width: 48px;
     background-size: 100% 100%;
-    margin:  0 auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    transition: all 0.2s linear;
 }
-
-
-
 
 .m-mac {
     background-image: url(../image/mac.svg);
@@ -63,52 +58,93 @@
     background-size: 100% 100%;
 }
 
-
-
-.hover-open{
+/*隐藏菜单*/
+.menu{
+    background-color:  rgba(0, 0, 0, 0.96);
+    height: 100%;
+    width: 100%;
+    top:44px;
+    position: fixed;
+    z-index: 3;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+.menu-open {
     position: absolute;
     z-index: 1;
     top: 5px;
-    display: block;
-height: 24px;
-width: 24px;
-background-image: url(../image/menu.JPG);
-background-size: 100% 100%;
-display: none;
-overflow: hidden;
+    height: 24px;
+    width: 24px;
+    background-image: url(../image/menu.svg);
+    background-size: 100% 100%;
+    display: none;
 }
-.menu-hi{
+
+.ms-wapper{
+    background-color:  #333;
+    top: 44px;
+    width: 80%;
+    height: 36px;
+    margin:  10px auto 10px;
+    left:10%;
+    border-radius: 4px;
+}
+.menu-search
+{
     display: block;
-    position: absolute;
-    z-index: 1;
-    width: 500px;
-    height: 0;
-    background-color:rgba(45, 45, 45, 0.98); 
+    outline: 0;
+    -webkit-appearance: none;
+    height: 28px;
+    width: 100px;
+    border: 0;
+    border-radius: 0;
+    color: #f2f2f2;
+    margin: 8px 5px 0 8px;
+   
+    background-color:transparent;
+}
+.menu-hi {
+    display: block;
+    top:104px;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
     transition: all 0.5s;
 }
-.menu-li{
+
+.menu-li {
     display: block;
     height: 48px;
-    width: 300px;
-    margin :0 auto;
+    width: 80%;
+    margin: 0 auto;
+    border: 0.3px solid #333;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin: 0 auto;
 }
-.menu-li a{
+
+
+.menu-li a {
     height: 48px;
+    width: 48px;
     line-height: 48px;
     display: block;
-    margin :0 auto;
+    /* margin: 0 auto; */
 }
-.menu-li a:hover{
+
+.menu-li a:hover {
     opacity: 0.7;
 }
 
-.hover-open:hover  .menu-hi{
+.menu-open:hover .menu-hi {
     height: 300px;
 }
 
-.hover-open:hover{
+.menu-open:hover {
     overflow: visible;
 }
+
 .home {
     background-image: url(../image/Apple_home.svg);
     background-size: 100% 100%;
@@ -154,15 +190,208 @@ overflow: hidden;
     background-size: 100% 100%;
 }
 
-
-
 .nav-ul .nav-item1 a:hover {
     opacity: 0.7;
 }
 
+/*
+搜索 按钮js要用到的样式
+*/
+
+.vinish {
+    opacity: 0;
+    height: 30px;
+    width: 34px;
+}
+
+/* 搜索 栏*/
+.search-box {
+    position: fixed;
+    z-index: 2;
+    width: 42%;
+    height: 300px;
+    display: none;
+    left: 28%;
+    transition: all 0.5s linear;
+    /* animation:search-appear 0.5s linear; */
+    overflow: hidden;
+}
+
+@keyframes search-appear {
+    0% {
+        margin-left: 50px;
+    }
+    50% {
+        margin-left: 25px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.sbox-ul {
+    width: 98%;
+}
+
+.search-box li {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: block;
+}
+
+.search-box .sbox-li1 {
+    background-color: transparent;
+    height: 44px;
+    display: flex;
+}
+
+.search-button {
+    background-image: url(../image/search-button.svg);
+    height: 18px;
+    width: 18px;
+    background-size: 100% 100%;
+    margin: 13px 10px 13px;
+}
+
+.search-input {
+    display: block;
+    outline: 0;
+    -webkit-appearance: none;
+    height: 28px;
+    width: 100px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    color: #f2f2f2;
+    margin: 8px 5px 0 8px;
+}
+
+.search-box a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: white;
+}
+
+.search-box .sbox-a1 {
+    font-size: 8px;
+    margin-left: 26px;
+    color: #888888;
+    cursor: default;
+}
+
+.search-box .sb-content a:hover {
+    color: #0070c9;
+}
+
+.search-box li.sb-content:hover {
+    background-color: #f2f2f2;
+}
+
+.close-button {
+    background-image: url(../image/close.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: 2;
+    left: 80%;
+    top: 10px;
+    display: none;
+}
+
+.close-button:hover {
+    opacity: 0.7;
+}
+
+/*购物车*/
+
+.triangle {
+    height: 0;
+    width: 0;
+    border: 10px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #ffffff;
+    position: fixed;
+    top: 40px;
+    left: 1114px;
+}
+
+.shopping-car {
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 60px;
+    margin-right: 10%;
+}
+
+.shopping-car li {
+    display: flex;
+    height: 42px;
+    width: 76%;
+    border: 0.3px solid #888888;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin: 0 auto;
+}
+
+.information {
+    height: 86px;
+    font-size: 13px;
+    line-height: 86px;
+    color: #888;
+    text-align: center;
+}
+
+.shopping-car a {
+    line-height: 42px;
+    height: 42px;
+    color: #1296db;
+    font-size: 12px;
+}
+
+.shopping-car li div {
+    height: 16px;
+    width: 16px;
+    background-size: 100% 100%;
+    margin: 13px 10px 13px 0;
+}
+
+.shopping-dai {
+    background-image: url(../image/shopping-dai.svg);
+}
+
+.shoucang {
+    background-image: url(../image/shoucang.svg);
+}
+
+.dingdan {
+    background-image: url(../image/cube.svg);
+}
+
+.shezhi {
+    background-image: url(../image/shezhi.svg);
+}
+
+.lode {
+    background-image: url(../image/account.svg);
+}
+
+.shopping-car a:hover {
+    text-decoration: underline;
+}
 
 /*内容部分*/
-
 
 /*独立板块 standalone*/
 
@@ -176,7 +405,7 @@ overflow: hidden;
     padding: 150px 0 0 0;
     font-size: 30px;
     font-weight: bold;
-    width:80%;
+    width: 80%;
     margin: 0 auto 0;
     text-align: center;
 }
@@ -216,7 +445,8 @@ overflow: hidden;
     margin: 0 auto 0;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;/* 文字对齐居中*/
+    text-align: center;
+    /* 文字对齐居中*/
 }
 
 .item-p2 {
@@ -251,7 +481,7 @@ overflow: hidden;
 
 .img2 {
     background-image: url(../image/iPhoneXss.JPG);
-    width: 750px;
+    width: 600px;
     height: 290px;
 }
 
@@ -282,21 +512,24 @@ overflow: hidden;
     height: 360px;
 }
 
-.small-wapper{
+.small-wapper {
     display: flex;
-    justify-content: space-around;/*周围都有空间*/
+    justify-content: space-around;
+    /*周围都有空间*/
     /* height: 550px; */
     width: 100%;
     overflow: hidden;
 }
+
 .small {
     position: relative;
     height: 550px;
     width: 745px;
     background-color: #fafafa;
-    margin: 5px  5px 5px;
+    margin: 5px 5px 5px;
     overflow: hidden;
 }
+
 .small-font {
     position: relative;
     width: 78%;
@@ -324,6 +557,7 @@ overflow: hidden;
     text-align: center;
     margin: 0 auto 0;
 }
+
 .img5 {
     background-image: url(../image/div5.jpg);
     width: 100%;
@@ -357,8 +591,6 @@ overflow: hidden;
     height: 19px;
 }
 
-
-
 .div6-1 {
     background-color: black;
 }
@@ -366,7 +598,7 @@ overflow: hidden;
 .img7 {
     background-image: url(../image/Macpro.jpg);
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 .div6 .small-p1-a {
@@ -419,8 +651,8 @@ overflow: hidden;
     left: 20%;
     top: 40%;
 }
-/*总页脚*/
 
+/*总页脚*/
 
 .global-fotter {
     background-color: #f2f2f2;
@@ -428,8 +660,9 @@ overflow: hidden;
     padding: 20px 0 0;
     flex-direction: column;
 }
+
 .help {
-    width: 70%;
+    width: 80%;
     margin: 0px auto 10px;
 }
 
@@ -438,16 +671,16 @@ overflow: hidden;
     font-size: 11px;
     font-family: arial;
 }
+
 .help a {
     font-size: 12px;
     font-family: arial;
 }
+
 .hr1 {
     margin: 20px 0 10px;
 }
-.hidsec{
-    display: none;
-}
+
 .menu-nav {
     width: 70%;
     margin: 10px auto 0;
@@ -458,9 +691,9 @@ overflow: hidden;
     width: 100%;
     font-family: arial;
     margin: 0 auto 35px;
-   justify-content:space-around; /*周围有一定空间*/
+    justify-content: space-around;
+    /*周围有一定空间*/
     align-items: center;
-    
 }
 
 .one-ul {
@@ -502,9 +735,9 @@ overflow: hidden;
 
 .footer-p1 {
     color: #555555;
-    width: 70%;
+    width: 80%;
     font-size: 11.5px;
-    margin: 50px auto 20px;
+    margin: 20px auto 20px;
 }
 
 .footer-p1 a {
@@ -515,10 +748,11 @@ overflow: hidden;
 .footer-p1 a:hover {
     text-decoration: underline;
 }
-.small-footer{
+
+.small-footer {
     width: 70%;
-    
 }
+
 .footer-p2 {
     color: #888888;
     font-size: 12px;
@@ -531,81 +765,123 @@ overflow: hidden;
 .footer-p3 {
     color: #333333;
     font-size: 12px;
-    
 }
+
 .small-footer .one-ul {
     height: 12px;
     width: 60px;
 }
+
 .small-footer .li-a {
     color: #555555;
     font-size: 11.5px;
     margin: 0;
 }
+
 .small-footer .uls {
-   justify-content: flex-start;
-   width:400px;
-   height: 30px;
-   display: block;
+    justify-content: flex-start;
+    width: 400px;
+    height: 30px;
+    display: block;
 }
 
+.hidsec {
+    display: none;
+    width: 80%;
+    overflow: hidden;
+    /* display: block; */
+}
 
+.hid {
+    display: block;
+    width: 100%;
+}
 
+.li-hid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    border-top:0.3px solid #888888; 
+    margin: 10px 0;
+}
 
-    @media only screen and (max-width: 818px)
-{
-
-    .nav-ul li{
-        display: none ;
+.addhao{
+background-image: url(../image/addhao.svg);
+background-size: 100% 100%;
+height: 12px;
+width:12px;
+margin: 4px 0;
+transition:transform  0.5s linear;
+}
+.hid .hi-ul{
+    overflow: hidden;
+    height: auto;
+    width: 150px;
+    transition: all 0.5s linear;
+}
+.li2-item {
+    display: block;
+    padding: 7px 0 7px;
+    line-height: 11px;
+}
+.li2-a {
+    color: #555555;
+    font-size: 11.5px;
+    margin: 10px 0 50px;
+}
+@media only screen and (max-width: 818px) {
+    .nav-ul li {
+        display: none;
     }
-    
-  .hover-open{
-      display: block;
-  }
-
-    .nav-ul .homewapper{
-        display: block ;
+    .menu-open {
+        display: block;
+    }
+    .nav-ul .homewapper {
+        display: block;
         height: 44px;
         position: relative;
         left: 50%;
-         margin-left:-24px; 
+        margin-left: -24px;
     }
-    .home{
+    .home {
         position: absolute;
     }
-    .nav-ul .bagwapper{
-        display: block ;
+    .nav-ul .bagwapper {
+        display: block;
         height: 44px;
         position: absolute;
-        right: 0; 
+        right: 0;
     }
-    .bag{
+    .bag {
         position: absolute;
-        right: 0;/*位于最右端*/
+        right: 0;
+        /*位于最右端*/
     }
-
-
-    .menu-nav{
-       display: none;
+    .menu-nav {
+        display: none;
+    }
+    .hidsec {
+        display: block;
+       
     }
     
-    .hidsec{
-        display: block;
-        width: 70%;
+    .small-wapper {
+        flex-wrap: wrap;
     }
-    .hid{
-display: block;
-width: 100%;
+    .close-button {
+        display: none;
     }
-  .li-hid{
-    display: block;
-    font-size: 12px;
-    height: 13px;
-    line-height: 13px;
-  }
-  .small-wapper{
-      flex-wrap: wrap;
-  }
-
-} 
-
+    .search-box {
+        display: none;
+    }
+    .triangle {
+        left: unset;
+        right: 15px;
+    }
+    .shopping-car {
+        margin-right: 1%;
+    }
+}

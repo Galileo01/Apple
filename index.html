@@ -5,7 +5,6 @@
     <title>Apple（中国大陆）-官方网站</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="icon" href="./apple.png" >
-    <base href="https://www.apple.com/cn/" target="_self">
     
     <meta charset="utf-8">
     <meta name="viewport"
@@ -14,21 +13,20 @@
 
 <body>
     <section class="nav-wapper">
-           
-                <li class="hover-open">
-                    <ul class="menu-hi">
-                    <li class="menu-li"><a href="#" class="m-mac"></a></li>
+            <li class="menu-open"></li>
+           <section class="menu" style="height:0">
+                <ul class="menu-hi">
+                        <div class="ms-wapper flex">
+                                <div class="search-button"></div>
+                        <input type="text" class="menu-search" value="搜索 apple.com">
+                    </div> 
+                    <li class="menu-li li1"><a href="#" class="m-mac"></a></li>
                     <li class="menu-li"><a href="#" class="m-iPad"></a></li>
                     <li class="menu-li"><a href="#" class="m-iphone"></a></li>
                     <li class="menu-li"><a href="#" class="m-watch"></a></li>
                     <li class="menu-li"><a href="#" class="m-music"></a></li>
                 </ul>
-            </li>
-               
-
-
-
-        </li>
+            </section>
         <nav class="global-nav auto">
 
             <ul class="nav-ul flex">
@@ -38,21 +36,21 @@
                 </li>
 
                 <li class="nav-item1">
-                    <a href="mac/" class="mac"></a>
+                    <a href="https://www.apple.com/cn/mac/" class="mac" ></a>
                 </li>
 
                 <li class="nav-item1">
-                    <a href="ipad/" class="iPad"></a>
+                    <a href="https://www.apple.com/cn/ipad/" class="iPad"></a>
                 </li>
 
                 <li class="nav-item1">
-                    <a href="iphone/" class="iPhone"></a>
+                    <a href="https://www.apple.com/cn/iphone/" class="iPhone"></a>
                 </li>
                 <li class="nav-item1">
-                    <a href="watch/" class="watch"></a>
+                    <a href="https://www.apple.com/cn/watch/" class="watch"></a>
                 </li>
                 <li class="nav-item1">
-                    <a href="music/" class="music"></a>
+                    <a href="https://www.apple.com/cn/music/" class="music"></a>
                 </li>
 
                 <li class="nav-item1">
@@ -66,8 +64,42 @@
                     </a>
                 </li>
             </ul>
+            
         </nav>
+        
     </section>
+    <section class="search-box" >
+            <ul class="sbox-ul">
+                <li  class="sbox-li1">
+                    <div class="search-button"></div>
+                    <input type="text" class="search-input" value="搜索 apple.com">
+                </li>
+                <li><a href="#" class="sbox-a1">快速链接</a></li>
+                <li class="sb-content"><a href="#">查找零售商</a></li>
+                <li class="sb-content"><a href="#">Today at Apple</a></li>
+                <li class="sb-content"><a href="#">配件</a></li>
+                <li class="sb-content"><a href="#">AirPods</a></li>
+                <li class="sb-content"><a href="#">iPods</a></li>
+                <li></li>
+            </ul>
+
+           
+        </section>
+        <div class="close-button"></div>
+        <section class="triangle" style="display: none"></section>
+        <section class="shopping-car" style="display: none">
+            <div class="information">
+                你的购物袋是空的
+            </div>
+            <ul>
+                <li> <div class="shopping-dai"></div><a href="#">购物袋</a></li>
+                <li><div class="shoucang"></div><a href="#">收藏</a></li>
+                <li><div class="dingdan"></div><a href="#">订单</a></li>
+                <li><div class="shezhi"></div><a href="#">账户</a></li>
+                <li><div class="lode"></div><a href="#">登录</a></li>
+            </ul>
+        </section>
+
     <!-- 单独的第一块 -->
     <section class="standalone">
         <p class="standalone-p1 auto">折抵换购 iPhone XR 仅 RMB 200/月起，或 RMB 4799 起*。</p>
@@ -196,11 +228,11 @@
             <div class="small div7-2" onclick="window.open('https://www.apple.com/cn/ipad-pro/','_self')">
                 <div class="img10 small-img auto img-full"></div>
                 <div class="small-font">
-                    <p class="small-font-p1"><a href="ipad-pro/" class="small-p1-a">iPod Pro<br></a> </p>
-                    <p class="small-font-p2"><a class="p2-a" href="ipad-pro/">全新，全平面，全方位强大</a></p>
+                    <p class="small-font-p1"><a href="https://www.apple.com/cn/ipad-pro/" class="small-p1-a">iPod Pro<br></a> </p>
+                    <p class="small-font-p2"><a class="p2-a" href="https://www.apple.com/cn/ipad-pro/">全新，全平面，全方位强大</a></p>
                     <p class="item-p3">
-                        <a class="p-a" href="ipad-pro/"> 进一步了解</a>&gt;
-                        <a class="p-a" href="ipad-pro/"> 购买</a>&gt;
+                        <a class="p-a" href="https://www.apple.com/cn/ipad-pro/"> 进一步了解</a>&gt;
+                        <a class="p-a" href="https://www.apple.com/cn/ipad-pro/"> 购买</a>&gt;
                     </p>
                 </div>
             </div>
@@ -223,20 +255,46 @@
         </section>
         <section class="hidsec auto">
             <ul class="hid">
-                <li class="li-hid">选购及了解</li>
-                <hr class="hr1 c8">
-                <li class="li-hid">Apple Store 商店</li>
-                <hr class="hr1 c8">
+                    <li class="li-hid" style="border: 0"><span>选购及了解</span><div class="addhao"></div></li>
+                <ul class="hi-ul" style="height: 0 ">
+                    <li class="li2-item"><a class="li2-a" href="#">Mac</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPad</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPhone</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">Watch</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">Music</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iTune</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">HomePod</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPod touch</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">配件</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">App Store 充值卡 </a></li>
+                </ul>
+            </li>
+           
+            <li class="li-hid" ><span> Apple Store 商店</span><div class="addhao"></div></li>
+                <ul class="hi-ul" style="height: 0 ">
+                    <li class="li2-item"><a class="li2-a" href="#">Mac</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPad</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPhone</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">Watch</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">Music</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iTune</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">HomePod</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">iPod touch</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">配件</a></li>
+                    <li class="li2-item"><a class="li2-a" href="#">App Store 充值卡 </a></li>
+                </ul>
+            </li>
+               
                 <li class="li-hid">教育应用</li>
-                <hr class="hr1 c8">
+            
                 <li class="li-hid">商务应用</li>
-                <hr class="hr1 c8">
+               
                 <li class="li-hid">账户</li>
-                <hr class="hr1 c8">
+             
                 <li class="li-hid">Apple 价值观</li>
-                <hr class="hr1 c8">
+             
                 <li class="li-hid">关于 Apple</li>
-                <hr class="hr1 c8">
+            
             </ul>
         </section>
         <nav class="menu-nav">
@@ -339,3 +397,5 @@
 </body>
 
 </html>
+<script src="./js/tools.js"></script>
+<script src="./js/index.js"></script>
