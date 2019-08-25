@@ -4,7 +4,8 @@
 前端学习（Html，Css，JS）
 
 #### 软件架构
-软件架构说明
+apple 官网摹写
+https://ego-git.gitee.io/apple/  直接复制访问
 
 
 #### 安装教程
